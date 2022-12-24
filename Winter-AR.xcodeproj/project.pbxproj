@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4161F9B52956A86F00E2AED0 /* TestSnapShotARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161F9B42956A86F00E2AED0 /* TestSnapShotARView.swift */; };
+		4161F9B829576D1000E2AED0 /* Tj.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4161F9B729576D1000E2AED0 /* Tj.usdz */; };
 		5E0514B629569D8200CE3C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514B529569D8200CE3C03 /* AppDelegate.swift */; };
 		5E0514B829569D8200CE3C03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514B729569D8200CE3C03 /* ContentView.swift */; };
 		5E0514BA29569D8200CE3C03 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514B929569D8200CE3C03 /* Experience.rcproject */; };
@@ -16,8 +17,6 @@
 		5E0514C929569D8400CE3C03 /* Winter_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514C829569D8400CE3C03 /* Winter_ARTests.swift */; };
 		5E0514D329569D8400CE3C03 /* Winter_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514D229569D8400CE3C03 /* Winter_ARUITests.swift */; };
 		5E0514D529569D8400CE3C03 /* Winter_ARUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514D429569D8400CE3C03 /* Winter_ARUITestsLaunchTests.swift */; };
-		5E7CE0DB2957664A0065C64D /* winter.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5E7CE0DA2957664A0065C64D /* winter.usdz */; };
-		5E7CE0DD295766590065C64D /* winter.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5E7CE0DC295766590065C64D /* winter.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +39,7 @@
 /* Begin PBXFileReference section */
 		4161F9B42956A86F00E2AED0 /* TestSnapShotARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSnapShotARView.swift; sourceTree = "<group>"; };
 		4161F9B62956BB9100E2AED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4161F9B729576D1000E2AED0 /* Tj.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tj.usdz; sourceTree = "<group>"; };
 		5E0514B229569D8200CE3C03 /* Winter-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Winter-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0514B529569D8200CE3C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E0514B729569D8200CE3C03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,9 +51,7 @@
 		5E0514CE29569D8400CE3C03 /* Winter-ARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Winter-ARUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0514D229569D8400CE3C03 /* Winter_ARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winter_ARUITests.swift; sourceTree = "<group>"; };
 		5E0514D429569D8400CE3C03 /* Winter_ARUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winter_ARUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5E7CE0DA2957664A0065C64D /* winter.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = winter.usdz; path = ../../../../Downloads/winter.usdz; sourceTree = "<group>"; };
-		5E7CE0DC295766590065C64D /* winter.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = winter.usdz; sourceTree = "<group>"; };
-		5E7CE0DF295766800065C64D /* winter.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = winter.usdz; sourceTree = "<group>"; };
+		5E7CE0DF295766800065C64D /* Test.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Test.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,6 @@
 		5E0514A929569D8100CE3C03 = {
 			isa = PBXGroup;
 			children = (
-				5E7CE0DE295766800065C64D /* Models */,
 				5E0514B429569D8200CE3C03 /* Winter-AR */,
 				5E0514C729569D8400CE3C03 /* Winter-ARTests */,
 				5E0514D129569D8400CE3C03 /* Winter-ARUITests */,
@@ -105,11 +102,12 @@
 		5E0514B429569D8200CE3C03 /* Winter-AR */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CE0DF295766800065C64D /* winter.usdz */,
+				5E7CE0DF295766800065C64D /* Test.usdz */,
 				4161F9B62956BB9100E2AED0 /* Info.plist */,
 				5E0514B529569D8200CE3C03 /* AppDelegate.swift */,
 				5E0514B729569D8200CE3C03 /* ContentView.swift */,
 				4161F9B42956A86F00E2AED0 /* TestSnapShotARView.swift */,
+				4161F9B729576D1000E2AED0 /* Tj.usdz */,
 				5E0514B929569D8200CE3C03 /* Experience.rcproject */,
 				5E0514BB29569D8400CE3C03 /* Assets.xcassets */,
 				5E0514BD29569D8400CE3C03 /* Preview Content */,
@@ -136,19 +134,10 @@
 		5E0514D129569D8400CE3C03 /* Winter-ARUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CE0DA2957664A0065C64D /* winter.usdz */,
-				5E7CE0DC295766590065C64D /* winter.usdz */,
 				5E0514D229569D8400CE3C03 /* Winter_ARUITests.swift */,
 				5E0514D429569D8400CE3C03 /* Winter_ARUITestsLaunchTests.swift */,
 			);
 			path = "Winter-ARUITests";
-			sourceTree = "<group>";
-		};
-		5E7CE0DE295766800065C64D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4161F9B829576D1000E2AED0 /* Tj.usdz in Resources */,
 				5E0514BF29569D8400CE3C03 /* Preview Assets.xcassets in Resources */,
 				5E0514BC29569D8400CE3C03 /* Assets.xcassets in Resources */,
 			);
@@ -271,8 +261,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E7CE0DD295766590065C64D /* winter.usdz in Resources */,
-				5E7CE0DB2957664A0065C64D /* winter.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

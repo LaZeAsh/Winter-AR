@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 let backgroundGradient = LinearGradient(
     colors: [Color.black], startPoint: .top, endPoint: .bottom)
@@ -77,12 +78,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         
         // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        
-        // Add the box anchor to the scene
-        ARVariables.arView.scene.anchors.append(boxAnchor)
-        let winterModel = try! ModelEntity.loadModel(named: "winter")
+        let winterModel = try! ModelEntity.loadModel(named: "Tj")
         let anchor = AnchorEntity()
         anchor.addChild(winterModel)
         ARVariables.arView.scene.anchors.append(anchor)
