@@ -8,11 +8,27 @@
 import SwiftUI
 import RealityKit
 
+let backgroundGradient = LinearGradient(
+    colors: [Color.black], startPoint: .top, endPoint: .bottom)
 struct ContentView : View {
+    let txt = "Enable Augmented Reality Mode"
+    @State public var enableAR = false
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all) // makes background black
+            VStack {
+                Button(txt){
+                    enableAR.toggle()
+                }
+                if enableAR {
+                    
+                }
+        }
+    //        return         ARViewContainer().edgesIgnoringSafeArea(.all)
+        }
     }
 }
+
 
 struct ARViewContainer: UIViewRepresentable {
     
@@ -30,7 +46,9 @@ struct ARViewContainer: UIViewRepresentable {
         
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func updateUIView(_ uiView: ARView, context: Context) {
+        
+    }
     
 }
 
