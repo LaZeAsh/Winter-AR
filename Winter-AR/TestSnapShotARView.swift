@@ -15,7 +15,7 @@ struct TestSnapShotARView: View {
 
             TestSnapShotARViewContainer()
 
-            snapshotButton
+//            snapshotButton
         }
     }
 }
@@ -24,32 +24,7 @@ struct ARVariables{
     static var arView = ARView()
 }
 
-extension TestSnapShotARView {
-    var snapshotButton: some View {
-        Button {
-            // (Placeholder): Take a snapshot
-            ARVariables.arView.snapshot(saveToHDR: false) { (image) in
 
-              // Compress the image
-              let compressedImage = UIImage(data: (image?.pngData())!)
-
-              // Save in the photo album
-              UIImageWriteToSavedPhotosAlbum(compressedImage!, nil, nil, nil)
-
-                print("hi")
-            }
-        } label: {
-            Image(systemName: "camera")
-                .frame(width:60, height:60)
-                .font(.title)
-                .background(.white.opacity(0.75))
-                .cornerRadius(30)
-                .padding()
-        }
-        .position(x: 200, y: 625)
-//        .border(Color.gray)
-    }
-}
 
 struct TestSnapShotARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {

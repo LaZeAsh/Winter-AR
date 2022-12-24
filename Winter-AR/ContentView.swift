@@ -23,12 +23,43 @@ struct ContentView : View {
                 .buttonStyle(ButtonStyling())
         }
             .fullScreenCover(isPresented: $enableAR) {
-                ARViewContainer()
+                ZStack {
+                    ARViewContainer()
+                    snapshotButton
+                }
             }
     //        return         ARViewContainer().edgesIgnoringSafeArea(.all)
         }
     }
 }
+
+extension ContentView {
+    var snapshotButton: some View {
+        Button {
+            // (Placeholder): Take a snapshot
+            ARVariables.arView.snapshot(saveToHDR: false) { (image) in
+
+              // Compress the image
+              let compressedImage = UIImage(data: (image?.pngData())!)
+
+              // Save in the photo album
+              UIImageWriteToSavedPhotosAlbum(compressedImage!, nil, nil, nil)
+
+                print("hi")
+            }
+        } label: {
+            Image(systemName: "camera")
+                .frame(width:60, height:60)
+                .font(.title)
+                .background(.white.opacity(0.75))
+                .cornerRadius(30)
+                .padding()
+        }
+        .position(x: 200, y: 625)
+//        .border(Color.gray)
+    }
+}
+
 
 struct ButtonStyling: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
@@ -42,15 +73,21 @@ struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
         
-        let arView = ARView(frame: .zero)
+//        let arView = ARView(frame: .zero)
+        
         
         // Load the "Box" scene from the "Experience" Reality File
         let boxAnchor = try! Experience.loadBox()
         
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
         
-        return arView
+        // Add the box anchor to the scene
+        ARVariables.arView.scene.anchors.append(boxAnchor)
+        let winterModel = try! ModelEntity.loadModel(named: "winter")
+        let anchor = AnchorEntity()
+        anchor.addChild(winterModel)
+        ARVariables.arView.scene.anchors.append(anchor)
+        
+        return ARVariables.arView
         
     }
     
