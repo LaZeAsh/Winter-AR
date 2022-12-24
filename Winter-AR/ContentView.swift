@@ -8,7 +8,27 @@
 import SwiftUI
 import RealityKit
 import ARKit
+import AVFoundation
 
+var player: AVAudioPlayer?
+
+func playSound() {
+    guard let url = Bundle.main.url(forResource: "music", withExtension: "mp3") else { return }
+
+    do {
+        try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+        try AVAudioSession.sharedInstance().setActive(true)
+
+        player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+        guard let player = player else { return }
+
+        player.play()
+
+    } catch let error {
+        print(error.localizedDescription)
+    }
+}
 let backgroundGradient = LinearGradient(
     colors: [Color.black], startPoint: .top, endPoint: .bottom)
 struct ContentView : View {
@@ -76,12 +96,21 @@ struct ARViewContainer: UIViewRepresentable {
         
 //        let arView = ARView(frame: .zero)
         
-        
+       
         // Load the "Box" scene from the "Experience" Reality File
         let winterModel = try! ModelEntity.loadModel(named: "Tj")
+        
+        let anchor2 = try! Experience.loadBox()
         let anchor = AnchorEntity()
+        anchor.scale = [20, 20, 20]
         anchor.addChild(winterModel)
+        anchor.position -= [0, 1, 0]
         ARVariables.arView.scene.anchors.append(anchor)
+        ARVariables.arView.scene.anchors.append(anchor2)
+        let newTimer = Timer(timeInterval: 123, repeats: true) { newTimer in
+                playSound()    // Synchronous
+        }
+        RunLoop.current.add(newTimer, forMode: .common)
         
         return ARVariables.arView
         

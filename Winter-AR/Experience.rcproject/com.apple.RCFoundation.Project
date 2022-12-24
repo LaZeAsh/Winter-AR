@@ -36,7 +36,7 @@
                                           "emphasisAnimationType" : "flip",
                                           "iterations" : 1,
                                           "target" : [
-                                            "3788A5B5-0388-488A-8304-7B90FEBA6FAC"
+
                                           ]
                                         },
                                         "name" : {
@@ -75,7 +75,7 @@
                               "configurationBox" : {
                                 "configuration" : {
                                   "target" : [
-                                    "3788A5B5-0388-488A-8304-7B90FEBA6FAC"
+
                                   ]
                                 },
                                 "name" : "tapTarget"
@@ -101,41 +101,52 @@
               "material" : "concrete",
               "overrides" : {
                 "children" : {
-                  "4A213441-135C-450E-8EF8-1A4EAB267C1D" : {
+                  "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
+                  "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
+                  "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
+                  "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null,
+                  "FAA78DB7-0139-46AD-B572-7BD31D653114" : {
                     "overrides" : {
                       "arguments" : [
                         [
-                          "material",
+                          "includeSceneScaling",
                           {
-                            "typeName" : "String",
-                            "value" : "steel"
+                            "typeName" : "Bool",
+                            "value" : false
                           }
                         ],
                         [
-                          "type",
+                          "subpath",
                           {
                             "typeName" : "String",
-                            "value" : "box"
+                            "value" : ""
+                          }
+                        ],
+                        [
+                          "url",
+                          {
+                            "typeName" : "String",
+                            "value" : "model:d7579ea63cc037765f970014f829ebf9\/MerryChristmas_2022.reality"
+                          }
+                        ],
+                        [
+                          "withDescendants",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
                           }
                         ]
                       ],
                       "factory" : {
-                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
-                        "version" : "1.0"
+                        "identifier" : "com.apple.af.FileImportAssetFactory",
+                        "version" : "0.0"
                       },
                       "runtimeAttributes" : [
                         [
                           "RuntimeIdentifier",
                           {
                             "typeName" : "UUID",
-                            "value" : "3788A5B5-0388-488A-8304-7B90FEBA6FAC"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "Steel Box"
+                            "value" : "1623F15C-8E4F-4A19-8D11-E1CF8ED6982B"
                           }
                         ]
                       ]
@@ -155,15 +166,12 @@
                         1,
                         0,
                         0,
-                        0.05000000074505806,
+                        0.066890358924865723,
                         0,
                         1
                       ]
                     }
-                  },
-                  "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
-                  "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
-                  "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null
+                  }
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -192,9 +200,9 @@
                   0.52609646320343018,
                   0.23565244674682617,
                   0,
-                  -0.49694964289665222,
-                  0.35105085372924805,
-                  0.19960589706897736,
+                  -0.48240864276885986,
+                  0.35669994354248047,
+                  0.23741517961025238,
                   1
                 ],
                 "sceneTransform" : [

@@ -17,6 +17,7 @@
 		5E0514C929569D8400CE3C03 /* Winter_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514C829569D8400CE3C03 /* Winter_ARTests.swift */; };
 		5E0514D329569D8400CE3C03 /* Winter_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514D229569D8400CE3C03 /* Winter_ARUITests.swift */; };
 		5E0514D529569D8400CE3C03 /* Winter_ARUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514D429569D8400CE3C03 /* Winter_ARUITestsLaunchTests.swift */; };
+		5E7CE0E22957C0B80065C64D /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E7CE0E12957C0B80065C64D /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,8 @@
 		5E0514CE29569D8400CE3C03 /* Winter-ARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Winter-ARUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0514D229569D8400CE3C03 /* Winter_ARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winter_ARUITests.swift; sourceTree = "<group>"; };
 		5E0514D429569D8400CE3C03 /* Winter_ARUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winter_ARUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5E7CE0DF295766800065C64D /* Test.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Test.usdz; sourceTree = "<group>"; };
+		5E7CE0E02957963C0065C64D /* xmastree.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = xmastree.reality; sourceTree = "<group>"; };
+		5E7CE0E12957C0B80065C64D /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +104,9 @@
 		5E0514B429569D8200CE3C03 /* Winter-AR */ = {
 			isa = PBXGroup;
 			children = (
-				5E7CE0DF295766800065C64D /* Test.usdz */,
 				4161F9B62956BB9100E2AED0 /* Info.plist */,
+				5E7CE0E02957963C0065C64D /* xmastree.reality */,
+				5E7CE0E12957C0B80065C64D /* music.mp3 */,
 				5E0514B529569D8200CE3C03 /* AppDelegate.swift */,
 				5E0514B729569D8200CE3C03 /* ContentView.swift */,
 				4161F9B42956A86F00E2AED0 /* TestSnapShotARView.swift */,
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7CE0E22957C0B80065C64D /* music.mp3 in Resources */,
 				4161F9B829576D1000E2AED0 /* Tj.usdz in Resources */,
 				5E0514BF29569D8400CE3C03 /* Preview Assets.xcassets in Resources */,
 				5E0514BC29569D8400CE3C03 /* Assets.xcassets in Resources */,
