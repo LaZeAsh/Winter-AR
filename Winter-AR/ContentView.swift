@@ -20,15 +20,23 @@ struct ContentView : View {
                 Button(txt){
                     enableAR.toggle()
                 }
-                if enableAR {
-                    
-                }
+                .buttonStyle(ButtonStyling())
         }
+            .fullScreenCover(isPresented: $enableAR) {
+                ARViewContainer()
+            }
     //        return         ARViewContainer().edgesIgnoringSafeArea(.all)
         }
     }
 }
 
+struct ButtonStyling: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+            configuration.label
+                .foregroundColor(Color.red)
+                .padding()
+    }
+}
 
 struct ARViewContainer: UIViewRepresentable {
     
