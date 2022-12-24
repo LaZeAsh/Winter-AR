@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+body{
+    background: linear-gradient(69.9deg, rgb(0, 0, 0) 3.2%, rgb(2, 12, 30) 97.6%);
+    /* font-family: 'Roboto Flex', sans-serif; */  
+}
+
+/* heading styles */
+.title{
+    color:white;
+    display: block;
+    /* border:2px solid red; */
+    text-align: center;
+
+    font-size: 4em;
+    margin:0.5em 0;
+    font-weight: 100;
+}
+
+/* image styles */
 .listContainer {
+    /* border:2px solid green; */
+
     display: flex;
     flex-wrap: wrap;
+
+    list-style: none;
+    padding:0 1.5em;
+    margin:0;
 }
   
 .imageContainer {
     height: 40vh;
+    margin: 0.5em;
     flex-grow: 1;
 }
   
@@ -13,4 +40,16 @@
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+}
+
+.spacerContainer{
+    flex-grow: 9;
+}
+
+/* need this media query to make this layout look consistent on phone aspect ratios (taller than wider)*/
+@media (max-aspect-ratio: 1/1){
+    .imageContainer{
+        height:20vh;
+        margin: 0.25em;
+    }
 }

@@ -13,7 +13,7 @@ function Gallery() {
   return (
     <>
 
-      <h1>Photo Gallery</h1>
+      <h1 className={sstyles.title}>Photo Gallery</h1>
 
       {/* the images are currently imported from a json file and are rendered in a unordered list */}
       <ul className={sstyles.listContainer}>
@@ -21,11 +21,15 @@ function Gallery() {
           return(
             
             <li className={sstyles.imageContainer}>
-              <img className={sstyles.image} src={image.url}/>
+              <img className={sstyles.image} alt={image.url} src={image.url}/>
             </li>
 
           )
         })}
+
+        {/* need to add this last empty li to ensure the last element doesn't stretch */}
+        <li className={sstyles.spacerContainer}></li>
+
       </ul>
 
     </>
