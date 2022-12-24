@@ -12,7 +12,7 @@ struct TestSnapShotARView: View {
     var body: some View {
         ZStack {
             Text("hi")
-            
+
             TestSnapShotARViewContainer()
 
             snapshotButton
@@ -29,13 +29,13 @@ extension TestSnapShotARView {
         Button {
             // (Placeholder): Take a snapshot
             ARVariables.arView.snapshot(saveToHDR: false) { (image) in
-              
+
               // Compress the image
               let compressedImage = UIImage(data: (image?.pngData())!)
-                
+
               // Save in the photo album
               UIImageWriteToSavedPhotosAlbum(compressedImage!, nil, nil, nil)
-                
+
                 print("hi")
             }
         } label: {
@@ -46,6 +46,8 @@ extension TestSnapShotARView {
                 .cornerRadius(30)
                 .padding()
         }
+        .position(x: 200, y: 625)
+//        .border(Color.gray)
     }
 }
 
@@ -54,14 +56,14 @@ struct TestSnapShotARViewContainer: UIViewRepresentable {
 //        ARVariables.arView = ARView()
 
         // Load the "Box" scene from the "Experience" Reality File
-//        let boxAnchor = try! Experience.loadBox()
+        let boxAnchor = try! Experience.loadBox()
 //        // Add the box anchor to the scene
-//        ARVariables.arView.scene.anchors.append(boxAnchor)
+        ARVariables.arView.scene.anchors.append(boxAnchor)
 
-        
+
         return ARVariables.arView
     }
-    
+
     func updateUIView(_ uiView: ARView, context: Context) {}
 }
 
