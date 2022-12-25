@@ -36,8 +36,10 @@ struct ContentView : View {
     @State public var enableAR = false
     var body: some View {
         ZStack {
-            Color.black.edgesIgnoringSafeArea(.all) // makes background black
+            Color.teal.edgesIgnoringSafeArea(.all) // makes background blue
+            
             VStack {
+                Image("olaf")
                 Button(txt){
                     enableAR.toggle()
                 }
@@ -104,9 +106,10 @@ struct ARViewContainer: UIViewRepresentable {
         let anchor = AnchorEntity()
         anchor.scale = [20, 20, 20]
         anchor.addChild(winterModel)
-        anchor.position -= [0, 1, 0]
+        anchor.position -= [0, 3, 0]
         ARVariables.arView.scene.anchors.append(anchor)
         ARVariables.arView.scene.anchors.append(anchor2)
+//        ARVariables.arView.environment.sceneUnderstanding.options = .occlusion (use it when in an open environment)
         let newTimer = Timer(timeInterval: 123, repeats: true) { newTimer in
                 playSound()    // Synchronous
         }
