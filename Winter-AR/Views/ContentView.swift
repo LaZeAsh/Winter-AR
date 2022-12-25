@@ -32,6 +32,9 @@ func playSound() {
 let backgroundGradient = LinearGradient(
     colors: [Color.black], startPoint: .top, endPoint: .bottom)
 struct ContentView : View {
+    // register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     let txt = "Enable Augmented Reality Mode"
     @State public var enableAR = false
     var body: some View {
