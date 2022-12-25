@@ -105,73 +105,7 @@
                   "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
                   "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null,
-                  "FAA78DB7-0139-46AD-B572-7BD31D653114" : {
-                    "overrides" : {
-                      "arguments" : [
-                        [
-                          "includeSceneScaling",
-                          {
-                            "typeName" : "Bool",
-                            "value" : false
-                          }
-                        ],
-                        [
-                          "subpath",
-                          {
-                            "typeName" : "String",
-                            "value" : ""
-                          }
-                        ],
-                        [
-                          "url",
-                          {
-                            "typeName" : "String",
-                            "value" : "model:d7579ea63cc037765f970014f829ebf9\/MerryChristmas_2022.reality"
-                          }
-                        ],
-                        [
-                          "withDescendants",
-                          {
-                            "typeName" : "Bool",
-                            "value" : true
-                          }
-                        ]
-                      ],
-                      "factory" : {
-                        "identifier" : "com.apple.af.FileImportAssetFactory",
-                        "version" : "0.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "1623F15C-8E4F-4A19-8D11-E1CF8ED6982B"
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0.066890358924865723,
-                        0,
-                        1
-                      ]
-                    }
-                  }
+                  "FAA78DB7-0139-46AD-B572-7BD31D653114" : null
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -188,21 +122,21 @@
               "title" : "Box",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.27709957957267761,
-                  2.3503152757342605e-09,
-                  0.96084117889404297,
+                  -0.77276813983917236,
+                  -1.1211907846586655e-08,
+                  0.63468837738037109,
                   0,
-                  0.50549513101577759,
-                  0.85042494535446167,
-                  -0.14578112959861755,
+                  0.15442121028900146,
+                  0.96995055675506592,
+                  0.1880163848400116,
                   0,
-                  -0.81712335348129272,
-                  0.52609646320343018,
-                  0.23565244674682617,
+                  -0.6156163215637207,
+                  0.2433023601770401,
+                  -0.74954688549041748,
                   0,
-                  -0.48240864276885986,
-                  0.35669994354248047,
-                  0.23741517961025238,
+                  -7.8005962371826172,
+                  2.7742421627044678,
+                  -5.6084098815917969,
                   1
                 ],
                 "sceneTransform" : [
