@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         // Create the SwiftUI view that provides the window contents.
-         let contentView = ContentView()
+         let contentView = HomeView()
 //        let contentView = TestSnapShotARView()
 
         // Use a UIHostingController as window root view controller.

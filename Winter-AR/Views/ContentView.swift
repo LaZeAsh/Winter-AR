@@ -8,27 +8,7 @@
 import SwiftUI
 import RealityKit
 import ARKit
-import AVFoundation
 
-var player: AVAudioPlayer?
-
-func playSound() {
-    guard let url = Bundle.main.url(forResource: "music", withExtension: "mp3") else { return }
-
-    do {
-        try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-        try AVAudioSession.sharedInstance().setActive(true)
-
-        player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-        guard let player = player else { return }
-
-        player.play()
-
-    } catch let error {
-        print(error.localizedDescription)
-    }
-}
 let backgroundGradient = LinearGradient(
     colors: [Color.black], startPoint: .top, endPoint: .bottom)
 struct ContentView : View {
