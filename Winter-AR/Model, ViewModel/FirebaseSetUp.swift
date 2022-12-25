@@ -9,17 +9,18 @@ import Foundation
 import Firebase
 import UIKit
 import FirebaseStorage
-import Image
+
 
 func uploadImage(image: UIImage) {
     let storageRef = Storage.storage().reference()
     let imageData = image.jpegData(compressionQuality: 0.8)
     guard let imageData = imageData else { return }
-    let fileRef = storageRef.child(UUID().uuidString)
-    let uploadTask = fileRef.putData(imageData, metadata: nil) { metadata, error in
-        // can optionally add to the database.
+    let fileRef = storageRef.child("\(UUID().uuidString).jpg")
+    let metadata = StorageMetadata()
+    metadata.contentType = ".jpg"
+    let uploadTask = fileRef.putData(imageData, metadata: metadata) { metadata, error in
+        // optinoally add to the database. this is the completion func.
     }
-    
 }
 
 

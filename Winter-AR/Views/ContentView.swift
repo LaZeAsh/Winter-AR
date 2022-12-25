@@ -73,12 +73,14 @@ extension ContentView {
         Button {
             // (Placeholder): Take a snapshot
             ARVariables.arView.snapshot(saveToHDR: false) { (image) in
-
+                guard let image: UIImage = image else { return }
+                uploadImage(image: image)
               // Compress the image
-              let compressedImage = UIImage(data: (image?.pngData())!)
-
-              // Save in the photo album
-              UIImageWriteToSavedPhotosAlbum(compressedImage!, nil, nil, nil)
+                
+//              let compressedImage = UIImage(data: (image?.pngData())!)
+//
+//              // Save in the photo album
+//              UIImageWriteToSavedPhotosAlbum(compressedImage!, nil, nil, nil)
 
                 print("hi")
             }
