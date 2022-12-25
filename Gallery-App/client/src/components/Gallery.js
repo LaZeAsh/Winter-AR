@@ -28,6 +28,8 @@ function Gallery() {
           })
         })
       })
+      // this comment stops the warning from useEffect, this should allow us to build now
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
