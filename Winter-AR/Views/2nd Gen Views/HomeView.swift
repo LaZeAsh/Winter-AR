@@ -22,18 +22,28 @@ struct HomeView: View {
         }
         .fullScreenCover(isPresented: $isShowing3D) {
             ZStack {
-                ARViewContainer().ignoresSafeArea()
-                
-                VStack { cancelButton_3D }
+                SnapshotARView().ignoresSafeArea()
+                VStack { cancelButton(option: 1) }
             }
+        }
+        .fullScreenCover(isPresented: $isShowingWebsite) {
+            ZStack {
+                GalleryWebView()
+                VStack { cancelButton(option: 2) }
+            }
+
         }
     }
 }
 
 extension HomeView {
-    var cancelButton_3D: some View {
+    func cancelButton(option: Int) -> some View {
         Button(action: {
-            self.isShowing3D.toggle()
+            if option == 1 {
+                self.isShowing3D.toggle()
+            } else {
+                self.isShowingWebsite.toggle()
+            }
         }) {
             Image(systemName: "xmark")
                 .font(.system(size: 40))
@@ -82,7 +92,7 @@ extension HomeView {
     
     var button2: Button<some View> {
         Button("Check out your and \n other people's best moments!") {
-            
+            self.isShowingWebsite.toggle()
         }
     }
     

@@ -11,8 +11,8 @@ struct SnapshotARView: View {
     @State var isShowingAlert = false
     var body: some View {
         ZStack {
-            snapshotButton
             ARViewContainer()
+            snapshotButton
         }
         .alert(isPresented: $isShowingAlert) {
             Alert(

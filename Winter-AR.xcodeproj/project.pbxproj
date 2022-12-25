@@ -13,6 +13,7 @@
 		415D16752957F25800BAC32C /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D16742957F25800BAC32C /* Audio.swift */; };
 		415D16782957F28300BAC32C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D16772957F28300BAC32C /* HomeView.swift */; };
 		415D167A29580C5400BAC32C /* SnapshotARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D167929580C5400BAC32C /* SnapshotARView.swift */; };
+		415D167C295811DC00BAC32C /* GalleryWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D167B295811DC00BAC32C /* GalleryWebView.swift */; };
 		4161F9B52956A86F00E2AED0 /* TestSnapShotARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161F9B42956A86F00E2AED0 /* TestSnapShotARView.swift */; };
 		5E0514B629569D8200CE3C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514B529569D8200CE3C03 /* AppDelegate.swift */; };
 		5E0514B829569D8200CE3C03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0514B729569D8200CE3C03 /* ContentView.swift */; };
@@ -50,6 +51,7 @@
 		415D16742957F25800BAC32C /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		415D16772957F28300BAC32C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		415D167929580C5400BAC32C /* SnapshotARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotARView.swift; sourceTree = "<group>"; };
+		415D167B295811DC00BAC32C /* GalleryWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryWebView.swift; sourceTree = "<group>"; };
 		4161F9B42956A86F00E2AED0 /* TestSnapShotARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSnapShotARView.swift; sourceTree = "<group>"; };
 		4161F9B62956BB9100E2AED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5E0514B229569D8200CE3C03 /* Winter-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Winter-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 			children = (
 				415D16772957F28300BAC32C /* HomeView.swift */,
 				415D167929580C5400BAC32C /* SnapshotARView.swift */,
+				415D167B295811DC00BAC32C /* GalleryWebView.swift */,
 			);
 			path = "2nd Gen Views";
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				4161F9B52956A86F00E2AED0 /* TestSnapShotARView.swift in Sources */,
 				415D16692957E32800BAC32C /* FirebaseSetUp.swift in Sources */,
 				415D167A29580C5400BAC32C /* SnapshotARView.swift in Sources */,
+				415D167C295811DC00BAC32C /* GalleryWebView.swift in Sources */,
 				5E0514B629569D8200CE3C03 /* AppDelegate.swift in Sources */,
 				5E0514BA29569D8200CE3C03 /* Experience.rcproject in Sources */,
 			);
