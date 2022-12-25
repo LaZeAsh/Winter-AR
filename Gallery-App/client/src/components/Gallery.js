@@ -3,8 +3,6 @@ import sstyles from '../styles/gallery.module.css';
 import {storage} from "../firebase/firebase";
 import { listAll, ref, getDownloadURL } from 'firebase/storage';
 
-const Imimages = require("../userImages.json");
-
 function Gallery() {
   // ref gets us the reference of the path of the images (which is the root of the bucket in our case)
   const imageListRef = ref(storage, "/");
