@@ -101,6 +101,73 @@
               "material" : "concrete",
               "overrides" : {
                 "children" : {
+                  "2EE347FF-3891-47E2-B995-42D8C25975EE" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "includeSceneScaling",
+                          {
+                            "typeName" : "Bool",
+                            "value" : false
+                          }
+                        ],
+                        [
+                          "subpath",
+                          {
+                            "typeName" : "String",
+                            "value" : ""
+                          }
+                        ],
+                        [
+                          "url",
+                          {
+                            "typeName" : "String",
+                            "value" : "model:d7579ea63cc037765f970014f829ebf9\/MerryChristmas_2022.reality"
+                          }
+                        ],
+                        [
+                          "withDescendants",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.af.FileImportAssetFactory",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "8184D877-C7E6-4663-BA96-4AB9E828DE85"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0.066890358924865723,
+                        0,
+                        1
+                      ]
+                    }
+                  },
                   "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
                   "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
                   "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
@@ -122,21 +189,21 @@
               "title" : "Box",
               "viewTransform" : {
                 "cameraTransform" : [
-                  -0.77276813983917236,
-                  -1.1211907846586655e-08,
-                  0.63468837738037109,
+                  0.40396192669868469,
+                  -1.0989141152606408e-08,
+                  0.9147757887840271,
                   0,
-                  0.15442121028900146,
-                  0.96995055675506592,
-                  0.1880163848400116,
+                  0.39720621705055237,
+                  0.90081095695495605,
+                  -0.17540492117404938,
                   0,
-                  -0.6156163215637207,
-                  0.2433023601770401,
-                  -0.74954688549041748,
+                  -0.82404005527496338,
+                  0.43421149253845215,
+                  0.36389338970184326,
                   0,
-                  -7.8005962371826172,
-                  2.7742421627044678,
-                  -5.6084098815917969,
+                  -6.8087773323059082,
+                  4.5925612449645996,
+                  5.7051644325256348,
                   1
                 ],
                 "sceneTransform" : [

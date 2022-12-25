@@ -74,6 +74,7 @@ extension HomeView {
         //            .background(.thinMaterial)
             .cornerRadius(12)
             .padding(.bottom)
+            .foregroundColor(.indigo)
     }
     
     var img1: Image {
