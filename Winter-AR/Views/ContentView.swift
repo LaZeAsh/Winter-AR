@@ -106,7 +106,7 @@ struct ARViewContainer: UIViewRepresentable {
         let anchor = AnchorEntity()
         anchor.scale = [20, 20, 20]
         anchor.addChild(winterModel)
-        anchor.position -= [0, 2.5, 0]
+        anchor.position -= [0, 2, 0]
         ARVariables.arView.scene.anchors.append(anchor)
         ARVariables.arView.scene.anchors.append(anchor2)
 //        ARVariables.arView.environment.sceneUnderstanding.options = .occlusion (use it when in an open environment)
