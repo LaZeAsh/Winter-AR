@@ -42,7 +42,16 @@ struct ContentView : View {
             Color.teal.edgesIgnoringSafeArea(.all) // makes background blue
             
             VStack {
+                Text("Winter-AR")
+                    .foregroundColor(Color.white)
+                    .frame(width: 200, height: 50, alignment: .center)
+                    .font(.title)
+                    .ignoresSafeArea(.all)
+                    .position(x: 195, y: 50)
                 Image("olaf")
+                    .resizable()
+                    .frame(width: 250, height: 500)
+                    .position(x: 195, y: 100)
                 Button(txt){
                     enableAR.toggle()
                 }
@@ -90,8 +99,13 @@ extension ContentView {
 struct ButtonStyling: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
             configuration.label
-                .foregroundColor(Color.red)
+                .foregroundColor(Color.white)
                 .padding()
+                .controlSize(.large)
+                .background(Color.mint)
+                .cornerRadius(8)
+                .position(x: 195, y: 170)
+//                .frame(height: 69)
     }
 }
 
