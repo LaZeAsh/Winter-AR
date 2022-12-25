@@ -109,6 +109,7 @@ struct ARViewContainer: UIViewRepresentable {
         ARVariables.arView.scene.anchors.append(anchor)
         ARVariables.arView.scene.anchors.append(anchor2)
 //        ARVariables.arView.environment.sceneUnderstanding.options = .occlusion (use it when in an open environment)
+        playSound()
         let newTimer = Timer(timeInterval: 123, repeats: true) { newTimer in
                 playSound()    // Synchronous
         }
