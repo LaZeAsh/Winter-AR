@@ -1,6 +1,6 @@
 # Winter-AR
 
-##💡 Inspiration💡
+## 💡 Inspiration💡
 
 All of our team members are currently located in places where it does not snow, and they will not have the opportunity to experience the Christmas Wonderland that the people who live in places where it snows get to experience. As a way to give them a similar experience from the comfort of their own home, we used Augmented Reality to give them a true experience of a Christmas Wonderland.
 
